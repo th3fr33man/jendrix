@@ -3,7 +3,7 @@
 #include <SD.h>
 #include <SPI.h>
 #include <Audio.h>
-#include <can.h>
+//#include <Can.h>
 
 /* Premier programme pour vérifier 
 le son capter sur entrée analogique 
@@ -13,9 +13,9 @@ des tensions produites*/
 
 int led1 = 10;
 int led2 = 12;
-int sensorValue1 = 0;
-int hpPin = DAC0;
-const int sonInPin = A0;
+int sensorValue1 = 0;  // variable pour récupérer les valeurs Echantillons
+int hpPin = DAC0;    // Sortie audio
+const int sonInPin = A0; // Entré audio
 
 
 // the setup routine runs once when you press reset:
@@ -48,8 +48,10 @@ void loop() {
   sensorValue1 = analogRead(sonInPin);
   sonEnCouleur(sensorValue1);
   
-  buffer=intVersShort(sensorValue1);
-  
+  for(int i=0;i<1024;i++){
+    
+  buffer[i]=intVersShort(sensorValue1);
+  }
   
   Serial.print(sensorValue1);
   Audio.prepare(buffer, S, volume);
