@@ -132,7 +132,7 @@
         <predecessors>
           <predecessor id="1" predecessor-id="20" type="FS"/>
         </predecessors>
-        <task id="37" name="#46 Conception Logiciel Arduino 12B" note="" work="28800" start="20121128T180000Z" end="20121129T180000Z" work-start="20121129T090000Z" percent-complete="34" priority="0" type="normal" scheduling="fixed-work">
+        <task id="37" name="#46 Conception Logiciel Arduino 12B" note="" work="28800" start="20121128T180000Z" end="20121129T180000Z" work-start="20121129T090000Z" percent-complete="60" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="5" type="FS"/>
             <predecessor id="1" predecessor-id="34" type="FS"/>
@@ -176,10 +176,10 @@
     </task>
     <task id="46" name="Connexion Wifi/uC" note="" work="593100" start="20121203T000000Z" end="20121228T144500Z" work-start="20121203T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <task id="47" name="Assemblage Shield Wifi" note="" work="57600" start="20121203T000000Z" end="20121204T180000Z" work-start="20121203T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="48" name="#53 Brochage Shield Wifi" note="" work="28800" start="20121203T000000Z" end="20121203T180000Z" work-start="20121203T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="48" name="#53 Brochage Shield Wifi" note="" work="28800" start="20121203T000000Z" end="20121203T180000Z" work-start="20121203T090000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
           <constraint type="must-start-on" time="20121203T000000Z"/>
         </task>
-        <task id="49" name="#54 Soudures Shield Wifi" note="" work="28800" start="20121203T180000Z" end="20121204T180000Z" work-start="20121204T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="49" name="#54 Soudures Shield Wifi" note="" work="28800" start="20121203T180000Z" end="20121204T180000Z" work-start="20121204T090000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="48" type="FS"/>
           </predecessors>
