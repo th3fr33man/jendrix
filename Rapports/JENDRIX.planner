@@ -174,7 +174,7 @@
         </task>
       </task>
     </task>
-    <task id="46" name="Connexion Wifi/uC" note="" work="593100" start="20121203T000000Z" end="20121228T144500Z" work-start="20121203T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="46" name="Connexion Wifi/uC" note="" work="679500" start="20121203T000000Z" end="20130102T144500Z" work-start="20121203T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <task id="47" name="Assemblage Shield Wifi" note="" work="57600" start="20121203T000000Z" end="20121204T180000Z" work-start="20121203T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <task id="48" name="#53 Brochage Shield Wifi" note="" work="28800" start="20121203T000000Z" end="20121203T180000Z" work-start="20121203T090000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
           <constraint type="must-start-on" time="20121203T000000Z"/>
@@ -185,7 +185,7 @@
           </predecessors>
         </task>
       </task>
-      <task id="50" name="Arch Reseau" note="" work="45000" start="20121204T000000Z" end="20121205T143000Z" work-start="20121204T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="50" name="Arch Reseau" note="" work="131400" start="20121204T000000Z" end="20121210T143000Z" work-start="20121204T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <task id="51" name="#55 Definition Mode de connexion" note="" work="0" start="20121204T000000Z" end="20121204T090000Z" work-start="20121204T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <constraint type="must-start-on" time="20121204T000000Z"/>
         </task>
@@ -204,108 +204,123 @@
             <predecessor id="1" predecessor-id="53" type="FS"/>
           </predecessors>
         </task>
-      </task>
-      <task id="55" name="Programmation Arduino DUE" note="" work="490500" start="20121205T143000Z" end="20121228T144500Z" work-start="20121205T143000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="56" name="#58 Prog Mode Connexion" note="" work="347400" start="20121205T143000Z" end="20121221T150000Z" work-start="20121205T143000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="55" name="#73 Utilisation nc - com pc1/pc2 filaire" note="" work="28800" start="20121205T143000Z" end="20121206T143000Z" work-start="20121205T143000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="54" type="FS"/>
           </predecessors>
         </task>
-        <task id="57" name="#59 Transmission Data uC/Carte" note="" work="143100" start="20121221T150000Z" end="20121228T144500Z" work-start="20121221T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="56" name="#74 Utilisation nc - com pc1/pc2 wifi" note="" work="28800" start="20121206T143000Z" end="20121207T143000Z" work-start="20121206T143000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="55" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="57" name="#75 Utilisation nc - com moduleWifly/pc" note="" work="28800" start="20121207T143000Z" end="20121210T143000Z" work-start="20121207T143000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="56" type="FS"/>
           </predecessors>
         </task>
       </task>
-    </task>
-    <task id="58" name="Appli Tel/ Fonction connexion Wifi/Tel" note="" work="306000" start="20130103T000000Z" end="20130117T150000Z" work-start="20130103T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="59" name="Dev IHM de Base" note="" work="57600" start="20130103T000000Z" end="20130104T180000Z" work-start="20130103T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <constraint type="must-start-on" time="20121210T000000Z"/>
-        <task id="60" name="#66 D&#xE9;finition des besoins" note="" work="28800" start="20130103T000000Z" end="20130103T180000Z" work-start="20130103T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <constraint type="must-start-on" time="20130103T000000Z"/>
-        </task>
-        <task id="61" name="#67 mockup" note="" work="28800" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="58" name="Programmation Arduino DUE" note="" work="490500" start="20121210T143000Z" end="20130102T144500Z" work-start="20121210T143000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="59" name="#58 Prog Mode Connexion" note="" work="347400" start="20121210T143000Z" end="20121226T150000Z" work-start="20121210T143000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
-            <predecessor id="1" predecessor-id="60" type="FS"/>
+            <predecessor id="1" predecessor-id="57" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="60" name="#59 Transmission Data uC/Carte" note="" work="143100" start="20121226T150000Z" end="20130102T144500Z" work-start="20121226T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="59" type="FS"/>
           </predecessors>
         </task>
       </task>
-      <task id="62" name="Dev Module Com/Tester Transmission" note="" work="248400" start="20130104T180000Z" end="20130117T150000Z" work-start="20130107T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="63" name="#64 Cr&#xE9;ation vue config r&#xE9;seau " note="" work="104400" start="20130104T180000Z" end="20130110T150000Z" work-start="20130107T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    </task>
+    <task id="61" name="Appli Tel/ Fonction connexion Wifi/Tel" note="" work="306000" start="20130103T000000Z" end="20130117T150000Z" work-start="20130103T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="62" name="Dev IHM de Base" note="" work="57600" start="20130103T000000Z" end="20130104T180000Z" work-start="20130103T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20121210T000000Z"/>
+        <task id="63" name="#66 D&#xE9;finition des besoins" note="" work="28800" start="20130103T000000Z" end="20130103T180000Z" work-start="20130103T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20130103T000000Z"/>
+        </task>
+        <task id="64" name="#67 mockup" note="" work="28800" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
-            <predecessor id="1" predecessor-id="61" type="FS"/>
+            <predecessor id="1" predecessor-id="63" type="FS"/>
           </predecessors>
         </task>
-        <task id="64" name="#65 Connexion module guitare" note="" work="144000" start="20130110T150000Z" end="20130117T150000Z" work-start="20130110T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      </task>
+      <task id="65" name="Dev Module Com/Tester Transmission" note="" work="248400" start="20130104T180000Z" end="20130117T150000Z" work-start="20130107T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="66" name="#64 Cr&#xE9;ation vue config r&#xE9;seau " note="" work="104400" start="20130104T180000Z" end="20130110T150000Z" work-start="20130107T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="64" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="67" name="#65 Connexion module guitare" note="" work="144000" start="20130110T150000Z" end="20130117T150000Z" work-start="20130110T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="66" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="68" name="Signal Audio Wifi/Tel" note="" work="316800" start="20130117T150000Z" end="20130131T150000Z" work-start="20130117T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="69" name="Validation reception signal Audio" note="" work="86400" start="20130117T150000Z" end="20130122T150000Z" work-start="20130117T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20130128T000000Z"/>
+        <task id="70" name="#61 WidGet Signal(Graph)" note="" work="28800" start="20130121T150000Z" end="20130122T150000Z" work-start="20130121T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="71" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="71" name="#62 Validation reception en console" note="" work="57600" start="20130117T150000Z" end="20130121T150000Z" work-start="20130117T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="67" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="72" name="CNA - CAN Tel" note="" work="230400" start="20130121T150000Z" end="20130131T150000Z" work-start="20130121T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="73" name="#63 Son vers Sortie Casque" note="" work="230400" start="20130121T150000Z" end="20130131T150000Z" work-start="20130121T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="71" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="74" name="Appli Tel/ Fonctions suppl&#xE9;mentaires" note="" work="57600" start="20130204T000000Z" end="20130205T180000Z" work-start="20130204T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="75" name="Stockage/enregistrement" note="" work="28800" start="20130204T180000Z" end="20130205T180000Z" work-start="20130205T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20130215T000000Z"/>
+        <task id="76" name="#69 Cr&#xE9;ation vue Stockage/enregistrement" note="" work="28800" start="20130204T180000Z" end="20130205T180000Z" work-start="20130205T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="78" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="77" name="IHM Avancee" note="" work="28800" start="20130204T000000Z" end="20130204T180000Z" work-start="20130204T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20130214T000000Z"/>
+        <task id="78" name="#68 D&#xE9;finition des besoins des fonctions sup" note="" work="28800" start="20130204T000000Z" end="20130204T180000Z" work-start="20130204T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20130204T000000Z"/>
+        </task>
+      </task>
+    </task>
+    <task id="79" name="Conception Appli Tel" note="" work="86400" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="80" name="Conception UML" note="" work="86400" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="81" name="#70 Diagramme cas d'utilisation" note="" work="28800" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="63" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="82" name="#71 Diagramme s&#xE9;quence/activit&#xE9;" note="" work="28800" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="63" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="83" name="#72 Diagramme de classe" note="" work="28800" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="63" type="FS"/>
           </predecessors>
         </task>
       </task>
     </task>
-    <task id="65" name="Signal Audio Wifi/Tel" note="" work="316800" start="20130117T150000Z" end="20130131T150000Z" work-start="20130117T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="66" name="Validation reception signal Audio" note="" work="86400" start="20130117T150000Z" end="20130122T150000Z" work-start="20130117T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <constraint type="must-start-on" time="20130128T000000Z"/>
-        <task id="67" name="#61 WidGet Signal(Graph)" note="" work="28800" start="20130121T150000Z" end="20130122T150000Z" work-start="20130121T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <predecessors>
-            <predecessor id="1" predecessor-id="68" type="FS"/>
-          </predecessors>
-        </task>
-        <task id="68" name="#62 Validation reception en console" note="" work="57600" start="20130117T150000Z" end="20130121T150000Z" work-start="20130117T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <predecessors>
-            <predecessor id="1" predecessor-id="64" type="FS"/>
-          </predecessors>
-        </task>
-      </task>
-      <task id="69" name="CNA - CAN Tel" note="" work="230400" start="20130121T150000Z" end="20130131T150000Z" work-start="20130121T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="70" name="#63 Son vers Sortie Casque" note="" work="230400" start="20130121T150000Z" end="20130131T150000Z" work-start="20130121T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <predecessors>
-            <predecessor id="1" predecessor-id="68" type="FS"/>
-          </predecessors>
-        </task>
-      </task>
-    </task>
-    <task id="71" name="Appli Tel/ Fonctions suppl&#xE9;mentaires" note="" work="57600" start="20130204T000000Z" end="20130205T180000Z" work-start="20130204T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="72" name="Stockage/enregistrement" note="" work="28800" start="20130204T180000Z" end="20130205T180000Z" work-start="20130205T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <constraint type="must-start-on" time="20130215T000000Z"/>
-        <task id="73" name="#69 Cr&#xE9;ation vue Stockage/enregistrement" note="" work="28800" start="20130204T180000Z" end="20130205T180000Z" work-start="20130205T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <predecessors>
-            <predecessor id="1" predecessor-id="75" type="FS"/>
-          </predecessors>
-        </task>
-      </task>
-      <task id="74" name="IHM Avancee" note="" work="28800" start="20130204T000000Z" end="20130204T180000Z" work-start="20130204T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <constraint type="must-start-on" time="20130214T000000Z"/>
-        <task id="75" name="#68 D&#xE9;finition des besoins des fonctions sup" note="" work="28800" start="20130204T000000Z" end="20130204T180000Z" work-start="20130204T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <constraint type="must-start-on" time="20130204T000000Z"/>
-        </task>
-      </task>
-    </task>
-    <task id="76" name="Conception Appli Tel" note="" work="86400" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="77" name="Conception UML" note="" work="86400" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="78" name="#70 Diagramme cas d'utilisation" note="" work="28800" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <predecessors>
-            <predecessor id="1" predecessor-id="60" type="FS"/>
-          </predecessors>
-        </task>
-        <task id="79" name="#71 Diagramme s&#xE9;quence/activit&#xE9;" note="" work="28800" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <predecessors>
-            <predecessor id="1" predecessor-id="60" type="FS"/>
-          </predecessors>
-        </task>
-        <task id="80" name="#72 Diagramme de classe" note="" work="28800" start="20130103T180000Z" end="20130104T180000Z" work-start="20130104T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <predecessors>
-            <predecessor id="1" predecessor-id="60" type="FS"/>
-          </predecessors>
-        </task>
-      </task>
-    </task>
-    <task id="81" name="A Definir" note="" work="0" start="20121105T000000Z" end="20121105T090000Z" work-start="20121105T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-    <task id="82" name="A Definir" note="" work="0" start="20121105T000000Z" end="20121105T090000Z" work-start="20121105T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-    <task id="83" name="A Definir" note="" work="0" start="20121105T000000Z" end="20121105T090000Z" work-start="20121105T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
     <task id="84" name="A Definir" note="" work="0" start="20121105T000000Z" end="20121105T090000Z" work-start="20121105T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
     <task id="85" name="A Definir" note="" work="0" start="20121105T000000Z" end="20121105T090000Z" work-start="20121105T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
     <task id="86" name="A Definir" note="" work="0" start="20121105T000000Z" end="20121105T090000Z" work-start="20121105T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="87" name="A Definir" note="" work="0" start="20121105T000000Z" end="20121105T090000Z" work-start="20121105T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="88" name="A Definir" note="" work="0" start="20121105T000000Z" end="20121105T090000Z" work-start="20121105T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="89" name="A Definir" note="" work="0" start="20121105T000000Z" end="20121105T090000Z" work-start="20121105T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
   </tasks>
   <resource-groups/>
   <resources>
