@@ -10,6 +10,7 @@ unsigned long var=0;
 void setup() {
   // debug output at 9600 baud
   Serial.begin(9600);
+  Serial1.begin(115200);
   pinMode(sonInPin, INPUT);
 }
 
@@ -49,6 +50,7 @@ void loop(){
          Serial.println("debut");               // test pour debug
          for (int i = 0 ; i< MAX ; i++){
           Serial.println(buffer[i]);
+          Serial1.println(buffer[i]);
          }
        Serial.println("Fin");
        etat=0;                                 // on repasse à l'état 0
