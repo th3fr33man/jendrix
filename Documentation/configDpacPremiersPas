@@ -1,10 +1,12 @@
 # Fichier de rappel de la procédure de configuration du module Dpac
 # Fichier manuel utilisé Airborne WLN DataBook RevE.pdf p 87 et 88
-# 
+# (page 54 pour le mode UDP)
 #
 # Commande a utiliser dans le cli
 
 se connecter grace a minicom en 9600 8n1
+
+
 wl-ssid [nom du ssid]	// donner le nom du ssid
 wl-type p		// en mode ad-hoc
 wl-dhcp 1     		// on active le dhcp
