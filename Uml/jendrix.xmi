@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XMI verified="false" xmi.version="1.2" timestamp="2013-01-21T16:33:41" xmlns:UML="http://schema.omg.org/spec/UML/1.3">
+<XMI verified="false" xmi.version="1.2" timestamp="2013-01-21T17:20:58" xmlns:UML="http://schema.omg.org/spec/UML/1.3">
  <XMI.header>
   <XMI.documentation>
    <XMI.exporter>umbrello uml modeller http://uml.sf.net</XMI.exporter>
@@ -40,15 +40,21 @@
       <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="P2aZeNCq5COf" name="APPLI GUITARE"/>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="xcnUEAf5DpRs" name="SMART PHONE HARD AUDIO"/>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="LisQGSgB2RdH" name="SMARTPHONE AUDIO EXT"/>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="fEBi4nphnwts" name="Module Audio"/>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="pL2FcI8yF6Ll" name="Appli Andoid">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="VaWx4UGz5fhY" name="new_operation"/>
+       </UML:Classifier.feature>
+      </UML:Class>
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
       <diagrams>
-       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="class diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="628" canvaswidth="946" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="VU4bxsxKfENn" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
+       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="class diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="868" canvaswidth="1250" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="VU4bxsxKfENn" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
         <widgets/>
         <messages/>
         <associations/>
        </diagram>
-       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="sequence diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="924" canvaswidth="1391" localid="cIKp6lgRjaiB" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="68" xmi.id="1iJGul5Zwvg8" documentation="" showscope="1" snapgrid="0" showatts="1" type="3">
+       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="sequence diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="1276" canvaswidth="1838" localid="cIKp6lgRjaiB" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="68" xmi.id="1iJGul5Zwvg8" documentation="" showscope="1" snapgrid="0" showatts="1" type="3">
         <widgets>
          <objectwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" usesdiagramusefillcolor="1" x="90" decon="0" showstereotype="1" y="48" font="Sans Serif,9,-1,0,50,0,1,0,0,0" localid="70e2SlXSBnkj" width="80" isinstance="0" multipleinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="Gq1jcnFsQYbd" height="24" drawasactor="0"/>
          <objectwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" usesdiagramusefillcolor="1" x="192" decon="0" showstereotype="1" y="48" font="Sans Serif,9,-1,0,50,0,1,0,0,0" localid="KVSPT6QvpxOz" width="74" isinstance="0" multipleinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="bdcqRdX3Qmtp" height="24" drawasactor="0"/>
@@ -99,6 +105,51 @@
          </messagewidget>
          <messagewidget linecolor="none" usesdiagramfillcolor="1" widgetbid="70e2SlXSBnkj" textid="80tLS3Z2VGCV" operation="" linewidth="none" seqnum="ecouter " usesdiagramusefillcolor="1" x="131" showstereotype="1" y="749" widgetaid="cIKp6lgRjaiB" font="Sans Serif,9,-1,0,50,0,0,0,0,0" width="1113" isinstance="0" usefillcolor="1" fillcolor="none" xmi.id="5RLiqWnFFRIr" height="8" sequencemessagetype="1001">
           <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="136" showstereotype="1" y="731" text="ecouter : " font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="704" width="66" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="80tLS3Z2VGCV" height="18"/>
+         </messagewidget>
+        </messages>
+        <associations/>
+       </diagram>
+       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="sequence diagram_module_Audio" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="868" canvaswidth="1250" localid="1YZHQ4Ujghk7" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="CCowT81joJ6U" documentation="" showscope="1" snapgrid="0" showatts="1" type="3">
+        <widgets>
+         <objectwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" usesdiagramusefillcolor="1" x="780" decon="0" showstereotype="1" y="21" font="Sans Serif,9,-1,0,50,0,1,0,0,0" localid="a2qb9d28E45h" width="66" isinstance="0" multipleinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="F8IUIPL97CFn" height="59" drawasactor="1"/>
+         <objectwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" usesdiagramusefillcolor="1" x="133" decon="0" showstereotype="1" y="21" font="Sans Serif,9,-1,0,50,0,1,0,0,0" localid="jIsVCLeD2QW9" width="84" isinstance="0" multipleinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="iXlZXtYpLHlK" height="59" drawasactor="1"/>
+         <objectwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" usesdiagramusefillcolor="1" x="435" decon="0" showstereotype="1" y="48" font="Sans Serif,9,-1,0,50,0,1,0,0,0" localid="1YZHQ4Ujghk7" width="103" isinstance="0" multipleinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="fEBi4nphnwts" height="24" drawasactor="0"/>
+        </widgets>
+        <messages>
+         <messagewidget linecolor="none" usesdiagramfillcolor="1" widgetbid="a2qb9d28E45h" operation="" linewidth="none" seqnum="" usesdiagramusefillcolor="1" x="486" showstereotype="1" y="117" widgetaid="1YZHQ4Ujghk7" font="Sans Serif,9,-1,0,50,0,0,0,0,0" width="335" isinstance="0" usefillcolor="1" fillcolor="none" xmi.id="Cr0Kq6vVK5BO" height="32" sequencemessagetype="1000"/>
+         <messagewidget linecolor="none" usesdiagramfillcolor="1" widgetbid="1YZHQ4Ujghk7" textid="vjRDobaeadIT" operation="réhausser" linewidth="none" seqnum="" usesdiagramusefillcolor="1" x="487" showstereotype="1" y="168" widgetaid="1YZHQ4Ujghk7" font="Sans Serif,9,-1,0,50,0,0,0,0,0" width="48" isinstance="0" usefillcolor="1" fillcolor="none" xmi.id="5gZlLJqV8oqy" height="32" sequencemessagetype="1001">
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="492" showstereotype="1" y="150" text=": réhausser" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="705" width="75" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="vjRDobaeadIT" height="18"/>
+         </messagewidget>
+         <messagewidget linecolor="none" usesdiagramfillcolor="1" widgetbid="1YZHQ4Ujghk7" textid="YIRiZMbiGjMR" operation="echantillonner" linewidth="none" seqnum="" usesdiagramusefillcolor="1" x="487" showstereotype="1" y="246" widgetaid="1YZHQ4Ujghk7" font="Sans Serif,9,-1,0,50,0,0,0,0,0" width="48" isinstance="0" usefillcolor="1" fillcolor="none" xmi.id="LdHQrW5UmULr" height="32" sequencemessagetype="1001">
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="492" showstereotype="1" y="228" text=": echantillonner" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="705" width="102" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="YIRiZMbiGjMR" height="18"/>
+         </messagewidget>
+         <messagewidget linecolor="none" usesdiagramfillcolor="1" widgetbid="jIsVCLeD2QW9" textid="yUJBkfDX7j5z" operation="Transmettre" linewidth="none" seqnum="" usesdiagramusefillcolor="1" x="176" showstereotype="1" y="299" widgetaid="1YZHQ4Ujghk7" font="Sans Serif,9,-1,0,50,0,0,0,0,0" width="309" isinstance="0" usefillcolor="1" fillcolor="none" xmi.id="8kKPSho1hPUM" height="8" sequencemessagetype="1001">
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="181" showstereotype="1" y="281" text=": Transmettre" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="704" width="88" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="yUJBkfDX7j5z" height="18"/>
+         </messagewidget>
+        </messages>
+        <associations/>
+       </diagram>
+       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="sequence diagram_Appli_Android" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="868" canvaswidth="1250" localid="T4v4LN1tSf8n" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="RPgDYJMHdljI" documentation="" showscope="1" snapgrid="0" showatts="1" type="3">
+        <widgets>
+         <objectwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" usesdiagramusefillcolor="1" x="254" decon="0" showstereotype="1" y="21" font="Sans Serif,9,-1,0,50,0,1,0,0,0" localid="OzyNWPkAbJTx" width="98" isinstance="0" multipleinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="hs7BGr0nF8FA" height="59" drawasactor="1"/>
+         <objectwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" usesdiagramusefillcolor="1" x="880" decon="0" showstereotype="1" y="21" font="Sans Serif,9,-1,0,50,0,1,0,0,0" localid="Y5gFNDxN8Ai0" width="109" isinstance="0" multipleinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="QCcfclxZus2W" height="59" drawasactor="1"/>
+         <objectwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" usesdiagramusefillcolor="1" x="572" decon="0" showstereotype="1" y="48" font="Sans Serif,9,-1,0,50,0,1,0,0,0" localid="T4v4LN1tSf8n" width="97" isinstance="0" multipleinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="pL2FcI8yF6Ll" height="24" drawasactor="0"/>
+        </widgets>
+        <messages>
+         <messagewidget linecolor="none" usesdiagramfillcolor="1" widgetbid="Y5gFNDxN8Ai0" textid="qPudhFLCfOQZ" operation="Récupérer son numérisé" linewidth="none" seqnum="" usesdiagramusefillcolor="1" x="620" showstereotype="1" y="165" widgetaid="T4v4LN1tSf8n" font="Sans Serif,9,-1,0,50,0,0,0,0,0" width="322" isinstance="0" usefillcolor="1" fillcolor="none" xmi.id="wdRiUUrSgiPg" height="327" sequencemessagetype="1000">
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="625" showstereotype="1" y="147" text=": Récupérer son numérisé" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="704" width="162" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="qPudhFLCfOQZ" height="18"/>
+         </messagewidget>
+         <messagewidget linecolor="none" usesdiagramfillcolor="1" widgetbid="T4v4LN1tSf8n" textid="If5CHN1v84Yw" operation="cliquer sur &quot;écouter&quot;" linewidth="none" seqnum="" usesdiagramusefillcolor="1" x="294" showstereotype="1" y="117" widgetaid="OzyNWPkAbJTx" font="Sans Serif,9,-1,0,50,0,0,0,0,0" width="334" isinstance="0" usefillcolor="1" fillcolor="none" xmi.id="8l5CYSs13teI" height="415" sequencemessagetype="1000">
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="299" showstereotype="1" y="99" text=": cliquer sur &quot;écouter&quot;" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="704" width="140" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="If5CHN1v84Yw" height="18"/>
+         </messagewidget>
+         <messagewidget linecolor="none" usesdiagramfillcolor="1" widgetbid="T4v4LN1tSf8n" textid="tvkkX13A6FRR" operation="cliquer sur &quot;sampler&quot;" linewidth="none" seqnum="" usesdiagramusefillcolor="1" x="295" showstereotype="1" y="215" widgetaid="OzyNWPkAbJTx" font="Sans Serif,9,-1,0,50,0,0,0,0,0" width="324" isinstance="0" usefillcolor="1" fillcolor="none" xmi.id="sIckeDqNH0uj" height="8" sequencemessagetype="1001">
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="300" showstereotype="1" y="197" text=": cliquer sur &quot;sampler&quot;" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="704" width="143" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="tvkkX13A6FRR" height="18"/>
+         </messagewidget>
+         <messagewidget linecolor="none" usesdiagramfillcolor="1" widgetbid="T4v4LN1tSf8n" textid="rIn8JhpAaau5" operation="sampler" linewidth="none" seqnum="" usesdiagramusefillcolor="1" x="621" showstereotype="1" y="326" widgetaid="T4v4LN1tSf8n" font="Sans Serif,9,-1,0,50,0,0,0,0,0" width="48" isinstance="0" usefillcolor="1" fillcolor="none" xmi.id="HMZLsT6klgUP" height="32" sequencemessagetype="1001">
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="626" showstereotype="1" y="308" text=": sampler" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="705" width="64" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="rIn8JhpAaau5" height="18"/>
+         </messagewidget>
+         <messagewidget linecolor="none" usesdiagramfillcolor="1" widgetbid="T4v4LN1tSf8n" textid="5tcrX5GPN1Xg" operation="cliquer sur &quot;diffuser&quot;" linewidth="none" seqnum="" usesdiagramusefillcolor="1" x="294" showstereotype="1" y="406" widgetaid="OzyNWPkAbJTx" font="Sans Serif,9,-1,0,50,0,0,0,0,0" width="334" isinstance="0" usefillcolor="1" fillcolor="none" xmi.id="bxFfDf4Szens" height="32" sequencemessagetype="1000">
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="299" showstereotype="1" y="388" text=": cliquer sur &quot;diffuser&quot;" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="704" width="139" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="5tcrX5GPN1Xg" height="18"/>
          </messagewidget>
         </messages>
         <associations/>
@@ -230,14 +281,14 @@
          </assocwidget>
         </associations>
        </diagram>
-       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="Appli smartphone" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="561" canvaswidth="981" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="7ywxWHPYwszl" documentation="" showscope="1" snapgrid="0" showatts="1" type="2">
+       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="Appli smartphone" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="868" canvaswidth="1250" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="7ywxWHPYwszl" documentation="" showscope="1" snapgrid="0" showatts="1" type="2">
         <widgets>
-         <usecasewidget width="70" showstereotype="1" x="618" usesdiagramusefillcolor="1" y="275" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="49" linecolor="none" xmi.id="FQ8KzBuTcx9h" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,75,0,0,0,0,0"/>
+         <usecasewidget width="70" showstereotype="1" x="618" usesdiagramusefillcolor="1" y="275" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="49" linecolor="none" xmi.id="FQ8KzBuTcx9h" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
          <actorwidget width="83" showstereotype="1" x="894" usesdiagramusefillcolor="1" y="369" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="59" linecolor="none" xmi.id="QCcfclxZus2W" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
-         <usecasewidget width="70" showstereotype="1" x="620" usesdiagramusefillcolor="1" y="360" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="49" linecolor="none" xmi.id="n9EhCt5Xv1mq" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,75,0,0,0,0,0"/>
+         <usecasewidget width="70" showstereotype="1" x="620" usesdiagramusefillcolor="1" y="360" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="49" linecolor="none" xmi.id="n9EhCt5Xv1mq" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
          <boxwidget width="307" showstereotype="1" x="538" usesdiagramusefillcolor="1" y="248" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="309" linecolor="#000000" xmi.id="xkyImN7CYkq8" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="545" showstereotype="1" y="533" text="Appli smartphone" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="700" width="114" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="TniNdktRu786" height="18"/>
-         <usecasewidget width="86" showstereotype="1" x="623" usesdiagramusefillcolor="1" y="448" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="49" linecolor="none" xmi.id="NhqckclwOWPE" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,75,0,0,0,0,0"/>
+         <usecasewidget width="86" showstereotype="1" x="623" usesdiagramusefillcolor="1" y="448" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="49" linecolor="none" xmi.id="NhqckclwOWPE" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
          <actorwidget width="69" showstereotype="1" x="420" usesdiagramusefillcolor="1" y="402" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="59" linecolor="none" xmi.id="hs7BGr0nF8FA" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
         </widgets>
         <messages/>
@@ -280,14 +331,14 @@
          </assocwidget>
         </associations>
        </diagram>
-       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="Appli audio" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="504" canvaswidth="978" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="d3MEM4A9PM5a" documentation="" showscope="1" snapgrid="0" showatts="1" type="2">
+       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="Appli audio" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="868" canvaswidth="1250" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="d3MEM4A9PM5a" documentation="" showscope="1" snapgrid="0" showatts="1" type="2">
         <widgets>
          <boxwidget width="248" showstereotype="1" x="563" usesdiagramusefillcolor="1" y="246" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="254" linecolor="#000000" xmi.id="KUjxzYpbDzpO" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="585" showstereotype="1" y="479" text="Appli audio" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="700" width="75" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ctipFlxN8JSj" height="18"/>
          <actorwidget width="55" showstereotype="1" x="919" usesdiagramusefillcolor="1" y="344" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="59" linecolor="none" xmi.id="F8IUIPL97CFn" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
          <actorwidget width="49" showstereotype="1" x="424" usesdiagramusefillcolor="1" y="332" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="59" linecolor="none" xmi.id="iXlZXtYpLHlK" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
-         <usecasewidget width="106" showstereotype="1" x="628" usesdiagramusefillcolor="1" y="269" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="51" linecolor="none" xmi.id="nav1akNAb5zr" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,75,0,0,0,0,0"/>
-         <usecasewidget width="114" showstereotype="1" x="623" usesdiagramusefillcolor="1" y="410" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="52" linecolor="none" xmi.id="oxExGeewBNTg" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,75,0,0,0,0,0"/>
+         <usecasewidget width="106" showstereotype="1" x="628" usesdiagramusefillcolor="1" y="269" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="51" linecolor="none" xmi.id="nav1akNAb5zr" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
+         <usecasewidget width="114" showstereotype="1" x="623" usesdiagramusefillcolor="1" y="410" usesdiagramfillcolor="1" isinstance="0" fillcolor="none" height="52" linecolor="none" xmi.id="oxExGeewBNTg" usefillcolor="1" linewidth="none" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="none" usesdiagramusefillcolor="1" x="676" showstereotype="1" y="351" text="&lt;&lt; include >>" font="Sans Serif,9,-1,0,50,0,0,0,0,0" pretext="" role="700" width="99" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="LsN8eSU7s0EN" height="18"/>
         </widgets>
         <messages/>
@@ -422,7 +473,7 @@
   </UML:Model>
  </XMI.content>
  <XMI.extensions xmi.extender="umbrello">
-  <docsettings viewid="1iJGul5Zwvg8" uniqueid="80tLS3Z2VGCV" documentation=""/>
+  <docsettings viewid="RPgDYJMHdljI" uniqueid="5tcrX5GPN1Xg" documentation=""/>
   <listview>
    <listitem open="1" type="800" id="Views">
     <listitem open="1" type="821" id="Component View">
@@ -445,6 +496,9 @@
     <listitem open="1" type="836" id="Entity Relationship Model"/>
     <listitem open="1" type="801" id="Logical View">
      <listitem open="1" type="813" id="i6geS412hdq8"/>
+     <listitem open="1" type="813" id="pL2FcI8yF6Ll">
+      <listitem open="0" type="815" id="VaWx4UGz5fhY"/>
+     </listitem>
      <listitem open="1" type="813" id="P2aZeNCq5COf"/>
      <listitem open="1" type="813" id="yGumBGltNPXn"/>
      <listitem open="0" type="807" id="VU4bxsxKfENn" label="class diagram"/>
@@ -463,13 +517,16 @@
      </listitem>
      <listitem open="1" type="813" id="VXvNNuLdo7o3"/>
      <listitem open="1" type="813" id="bdcqRdX3Qmtp"/>
+     <listitem open="1" type="813" id="fEBi4nphnwts"/>
      <listitem open="1" type="813" id="Gq1jcnFsQYbd"/>
      <listitem open="0" type="810" id="1iJGul5Zwvg8" label="sequence diagram"/>
+     <listitem open="0" type="810" id="RPgDYJMHdljI" label="sequence diagram_Appli_Android"/>
+     <listitem open="0" type="810" id="CCowT81joJ6U" label="sequence diagram_module_Audio"/>
      <listitem open="1" type="813" id="xcnUEAf5DpRs"/>
      <listitem open="1" type="813" id="pfCi0ZcLBOTx"/>
      <listitem open="1" type="813" id="LisQGSgB2RdH"/>
     </listitem>
-    <listitem open="0" type="802" id="Use Case View">
+    <listitem open="1" type="802" id="Use Case View">
      <listitem open="1" type="812" id="oxExGeewBNTg"/>
      <listitem open="0" type="805" id="d3MEM4A9PM5a" label="Appli audio"/>
      <listitem open="0" type="805" id="7ywxWHPYwszl" label="Appli smartphone"/>
