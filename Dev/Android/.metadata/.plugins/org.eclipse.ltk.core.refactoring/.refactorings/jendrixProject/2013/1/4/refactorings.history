@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;jendrixProject&apos;&#x0A;- Original project: &apos;jendrixProject&apos;&#x0A;- Original element: &apos;layout-fr-rBE-mdpi-v8&apos;" description="Delete element" element1="res/layout-fr-rBE-mdpi-v8" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1358856437589" subPackages="false" version="1.0"/>
+</session>
