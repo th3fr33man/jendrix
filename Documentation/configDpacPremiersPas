@@ -5,7 +5,11 @@
 # Commande a utiliser dans le cli
 
 se connecter grace a minicom en 9600 8n1
+p74 AirbornWLNDataBook.pdf
 
+Régler le niveau d'authentification (L1, L2, L3...)
+
+auth dpac dpac 		//règle le niveau à L5
 
 wl-ssid [nom du ssid]	// donner le nom du ssid
 wl-type p		// en mode ad-hoc
@@ -17,12 +21,16 @@ restart			// redémarrage
 # la connexion doit à partir de la s'établir entre le module et le périphérique wifi distant
 # une fois la connexion établie on peut se connecter en utilisant l'interface web en regardant au 
 # préalable l'adresse ip attribuée avec la commande wl-info
-# ensuite il suffit de taper cette adresse dans le navigateur. user oem et mdp oem
+# ensuite il suffit de taper cette adresse dans le navigateur. user oem et mdp oem 
+(dpac mdp dpac marche aussi) // pas de différence notable identifiée
 
 # message pour moi : lors du test de connexion avec mon portable pbm de reconnexion wifi, il faut désactiver le réseau filaire, se connecter avec le sans fil et réactiver le réseau filaire.
 
 # pour tester la connexion entre le module et le pc
-lancer netwag
+lancer netwag  
+- Solution 1: sélectionner le programme 89
+
+- Solution 2 // utiliser uniquement netwag afin de récupérer le N° de programme et la commande
 sélectionner server tcp
 sélectionner le port
 lancer la commande correspondante avec netwox
