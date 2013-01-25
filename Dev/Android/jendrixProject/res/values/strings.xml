@@ -8,5 +8,6 @@
     <string name="editText">tapez votre texte</string>
     <string name="butStart">start</string>
     <string name="butRecord">record</string>
+   	<string name="log">log</string>
         
 </resources>
