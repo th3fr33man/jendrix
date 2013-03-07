@@ -13,7 +13,7 @@ import android.util.Log;
 
 public class TcpServer extends Thread implements Runnable {
 
-	private static final int TCP_SERVER_PORT = 1234;
+	private final int TCP_SERVER_PORT = 1234;
 	private ServerSocket ss;;// null;
 	private Socket s;
 	private BufferedReader in;
@@ -113,21 +113,19 @@ public class TcpServer extends Thread implements Runnable {
 					Thread.sleep(2000);
 					Log.i("tcpServer", "			en pause           ");
 				} else {
-					
-					//Log.i("tcpServer", "			running           ");
 					in.ready();
-				
+					
 					// ////////////////////////////
 					// pour l'échantillonnage 8bits
 					// ////////////////////////////
 					JendrixMainActivity.BUFFER[JendrixMainActivity.I] = (short)(in.read()<<8)/*-120*/;
 					Log.i("TcpServer", ""+ JendrixMainActivity.BUFFER[JendrixMainActivity.I]);
 
-					// case suivante du tableau
+					// case suivante du tableau et buffer circulaire
 					JendrixMainActivity.I++;
 					if (JendrixMainActivity.I == JendrixMainActivity.TAILLE_BUFFER) {
 						JendrixMainActivity.I = 0;
-						Log.i("TcpServer", "buffer a 1069 ");
+						Log.i("TcpServer", "buffer a 10000 "); 		//contrôl dans le logcat
 					}
 
 					

@@ -27,6 +27,9 @@ public class AudioServer extends Thread implements Runnable {
 
 	}
 
+	
+	// TODO Créer une interface pour implémenter les méthodes communes au 2 Thread
+	// ou voir pour une autre méthode de contrôl
 	public void setPausing(boolean b) {
 		isThreadPausing.set(b);
 	}

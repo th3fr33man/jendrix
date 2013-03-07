@@ -1,3 +1,5 @@
+command=/usr/lib/jvm/java-6-openjdk-amd64/bin/javadoc
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.net.ServerSocket"><rhs name\="java.net.ServerSocket"/></lhs><lhs name\="android.app.Activity"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="android.view.LayoutInflater$Factory2"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="android.view.Window$Callback"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="android.view.KeyEvent$Callback"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="android.view.View$OnCreateContextMenuListener"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="android.content.ComponentCallbacks2"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="android.view.LayoutInflater$Factory"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="android.content.ComponentCallbacks"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="android.view.ContextThemeWrapper"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="android.content.ContextWrapper"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="android.content.Context"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs><lhs name\="org.appert44.ewtsrtandroid.models.ServerSon"><rhs name\="org.appert44.ewtsrtandroid.models.ServerSon"/></lhs></history>
 content_assist_number_of_computers=12
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=60,60,60
@@ -7,6 +9,8 @@ org.eclipse.jdt.internal.ui.navigator.layout=2
 org.eclipse.jdt.ui.editor.tab.width=
 org.eclipse.jdt.ui.formatterprofiles.version=12
 org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.jdt.ui.text.templates_migrated=true
 org.eclipse.jface.textfont=1|Monospace|10.0|0|GTK|1|;
