@@ -4732,3 +4732,13 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.android.ide
 
 !ENTRY org.eclipse.core.resources 2 10035 2013-03-02 17:09:18.182
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2013-03-10 00:19:57.675 -----------------------------------------------
+eclipse.buildId=v21.0.1-543035
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-03-10 00:20:04.594
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

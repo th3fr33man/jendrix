@@ -16,24 +16,24 @@
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
 		<item value="7" key="DIALOG_X_ORIGIN"/>
 	</section>
-	<section name="InstallationDialogSettings">
-		<item value="1020" key="DIALOG_WIDTH"/>
-		<item value="-60" key="DIALOG_Y_ORIGIN"/>
-		<item value="45" key="DIALOG_X_ORIGIN"/>
-		<item value="829" key="DIALOG_HEIGHT"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-	</section>
 	<section name="NewWizardAction">
 		<item value="com.android.ide.eclipse.adt.project.ImportProjectWizard.NewPrj" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="com.android.ide.eclipse.wizards.category"/>
 		</list>
 	</section>
+	<section name="InstallationDialogSettings">
+		<item value="1020" key="DIALOG_WIDTH"/>
+		<item value="-60" key="DIALOG_Y_ORIGIN"/>
+		<item value="829" key="DIALOG_HEIGHT"/>
+		<item value="45" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
 	<section name="ShowViewDialog">
 		<item value="376" key="DIALOG_WIDTH"/>
 		<item value="119" key="DIALOG_Y_ORIGIN"/>
-		<item value="444" key="DIALOG_HEIGHT"/>
 		<item value="615" key="DIALOG_X_ORIGIN"/>
+		<item value="444" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="ImportExportAction">
