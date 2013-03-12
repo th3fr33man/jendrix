@@ -19,7 +19,7 @@ public class JendrixMainActivity extends Activity {
 	private AudioServer audioServer;
 	public static volatile short[] BUFFER;
 	public static volatile int I = 0;
-	public static final int TAILLE_BUFFER = 1000000;
+	public static final int TAILLE_BUFFER = 2200;
 	public static volatile int COUNT = 0;
 	private Handler handler;
 
@@ -56,14 +56,18 @@ public class JendrixMainActivity extends Activity {
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
 				if (isChecked) {
+					//tcpServer.setPausing(false);
+					I=0;
 					if (audioServer.getRunning()==false) {
-						audioServer.setPausing(false);
 						audioServer.setRunning(true);
-						audioServer.start();
-					} else
 						audioServer.setPausing(false);
+						audioServer.start();
+					} else {
+						audioServer.setPausing(false);
+					}
 				} else
 					audioServer.setPausing(true);
+					//tcpServer.setPausing(true);
 			}
 
 			// TODO : a voir pour implémenter un type booleen qui serait dans
@@ -106,8 +110,8 @@ public class JendrixMainActivity extends Activity {
 	public void onResume() {
 		super.onResume(); // Always call the superclass method first
 		Log.i("TcpServer", "onResume: ");
-		audioServer.setPausing(false);
 		tcpServer.setPausing(false);
+		audioServer.setPausing(false);
 	}
 
 	@Override

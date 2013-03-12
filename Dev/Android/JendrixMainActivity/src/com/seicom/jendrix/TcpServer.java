@@ -27,7 +27,7 @@ public class TcpServer extends Thread implements Runnable {
 		// TODO : Rajouter le BufferedReader objet Buffer
 
 		setRunning(true);
-		setPausing(false);
+		setPausing(true);
 
 		Log.i("TcpServer", "startServeur");
 		try {
@@ -65,6 +65,7 @@ public class TcpServer extends Thread implements Runnable {
 	private void backGroundThreadProcessing() {
 		// Opération de récupération des echantillon
 		try {
+			
 			s = ss.accept();
 			String adIP = ss.getInetAddress().getHostAddress(); // retourne
 																// l'@ip : A
@@ -106,28 +107,50 @@ public class TcpServer extends Thread implements Runnable {
 			Thread.sleep(1000);
 			Log.i("TcpServer", "runTcpServer: sleep ");
 			// boucle while, récupère en boucle les échantillons reçu par la
-			// socket et les stock dans le buffer
-			while (isThreadRunnning.get()) { // (!Thread.currentThread().isInterrupted()){
-
+			//socket et les stock dans le buffer
+			while (isThreadRunnning.get()) {																// (!Thread.currentThread().isInterrupted()){
+				in.ready();
+				if (ss.isClosed()) {
+					s = ss.accept();
+				
+					Log.i("tcpServer", "			reconnexion           ");
+				}
 				if (isThreadPausing.get()) {
 					Thread.sleep(2000);
 					Log.i("tcpServer", "			en pause           ");
 				} else {
-					in.ready();
 					
-					// ////////////////////////////
-					// pour l'échantillonnage 8bits
-					// ////////////////////////////
-					JendrixMainActivity.BUFFER[JendrixMainActivity.I] = (short)(in.read()<<8)/*-120*/;
-					Log.i("TcpServer", ""+ JendrixMainActivity.BUFFER[JendrixMainActivity.I]);
-
-					// case suivante du tableau et buffer circulaire
+					//Log.i("tcpServer", "			ready           ");
+					//////////////////////////////////
+					// pour l'échantillonnage 8bits //
+					//////////////////////////////////
+					JendrixMainActivity.BUFFER[JendrixMainActivity.I] = (short)(in.read()<<8);
+//					//Log.i("TcpServer", ""+ JendrixMainActivity.BUFFER[JendrixMainActivity.I]);
+//
+//					// case suivante du tableau et buffer circulaire
 					JendrixMainActivity.I++;
 					if (JendrixMainActivity.I == JendrixMainActivity.TAILLE_BUFFER) {
 						JendrixMainActivity.I = 0;
-						Log.i("TcpServer", "buffer a 10000 "); 		//contrôl dans le logcat
+						Log.i("TcpServer", "buffer a 2200 "); 		//contrôl dans le logcat
 					}
 
+					
+					// //////////////////////////////
+					// pour l'échantillonnage 16 bits
+					// //////////////////////////////
+					
+					//temp = in.read()+in.read()<<8;
+//					JendrixMainActivity.BUFFER[JendrixMainActivity.I] = (short)(in.read()<<8+in.read());
+					
+//					// case suivante du tableau et buffer circulaire
+//					JendrixMainActivity.I++;
+//					if (JendrixMainActivity.I == JendrixMainActivity.TAILLE_BUFFER) {
+//						JendrixMainActivity.I = 0;
+//						Log.i("TcpServer", "buffer a 10000 "); 		//contrôl dans le logcat
+//					}
+					
+					
+					
 					
 
 					// //////////////////////////////

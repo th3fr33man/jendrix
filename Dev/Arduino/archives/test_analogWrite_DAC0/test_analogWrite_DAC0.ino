@@ -13,7 +13,7 @@ et sortir le son sur un hp branché sur DAC0*/
 int led1 = 10;
 int led2 = 12;
 int sensorValue1 = 0;  // variable pour récupérer les valeurs Echantillons
-int hpPin = DAC0;    // Sortie audio
+int hpPin = DAC1;    // Sortie audio
 const int sonInPin = A0; // Entré audio
 
 
@@ -37,14 +37,14 @@ void setup() {
 // the loop routine runs over and over again forever:
 void loop() {
     //Lecture écriture sur 12bits
-    analogReadResolution(12);
-    analogWriteResolution(12);
+    analogReadResolution(16);
+    analogWriteResolution(16);
     
     //Capture tension en entrée et conversion int sur 12bits
     sensorValue1 = analogRead(sonInPin);
     
     //Ecriture vers la pin DAC0(CNA) des valeurs récupéreées sur l'entrée analogique
-    analogWrite(hpPin, sensorValue1);
+    analogWrite(hpPin, sensorValue1<<4);
 }
 
 
