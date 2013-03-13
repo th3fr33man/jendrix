@@ -9,11 +9,22 @@ import android.util.Log;
 
 public class AudioServer extends Thread implements Runnable {
 
+	private TcpServer tcpServer;
 	private AudioTrack aT;
 	private AtomicBoolean isThreadRunnning = new AtomicBoolean(false);
 	private AtomicBoolean isThreadPausing = new AtomicBoolean(false);
 
 	// constructeur
+	public AudioServer(TcpServer TcpS) {
+		// préparation du hardware pour la lecture audio
+		tcpServer=TcpS;
+		aT = new AudioTrack(AudioManager.STREAM_MUSIC, 11520,
+				AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT,
+				AudioTrack.getMinBufferSize(11520,
+						AudioFormat.CHANNEL_OUT_MONO,
+						AudioFormat.ENCODING_PCM_16BIT), AudioTrack.MODE_STREAM);
+	}
+
 	public AudioServer() {
 		// préparation du hardware pour la lecture audio
 		aT = new AudioTrack(AudioManager.STREAM_MUSIC, 11520,
@@ -21,12 +32,8 @@ public class AudioServer extends Thread implements Runnable {
 				AudioTrack.getMinBufferSize(11520,
 						AudioFormat.CHANNEL_OUT_MONO,
 						AudioFormat.ENCODING_PCM_16BIT), AudioTrack.MODE_STREAM);
-
-//		setPausing(false);
-//		setRunning(true);
-
 	}
-
+	
 	
 	// TODO Créer une interface pour implémenter les méthodes communes au 2 Thread
 	// ou voir pour une autre méthode de contrôl
@@ -63,16 +70,19 @@ public class AudioServer extends Thread implements Runnable {
 		// ex.printStackTrace();
 		// Log.i("AudioServer", "go");
 		// }
-		Log.i("AudioServer", "lecture de la musique");
-		
+		int buf=AudioTrack.getMinBufferSize(11520,
+				AudioFormat.CHANNEL_OUT_MONO,
+				AudioFormat.ENCODING_PCM_16BIT);
+		Log.i("AudioServer", "lecture de la musique, BUFFER "+ buf);
+
 		try {
-			Thread.sleep(200);
-			aT.play();
+			Thread.sleep(1);
 			while (isThreadRunnning.get()) {
-				// aT.setLoopPoints(0,JendrixMainActivity.BUFFER.length/4,-1);
+				 aT.setLoopPoints(0,JendrixMainActivity.BUFFER.length/4,-1);
 				// //pour la lecture en boucle, ne fonctionne pas
 				if (isThreadPausing.get()) {
-					aT.stop();
+					aT.pause();
+					aT.flush();
 					Thread.sleep(2000); // (!Thread.currentThread().isInterrupted()){
 										// // essai pour l'utilisation des
 										// interrupt pour stopper proporement le
@@ -80,11 +90,15 @@ public class AudioServer extends Thread implements Runnable {
 										// (!this.isInterrupted()){
 					Log.i("AudioServer", "			en pause           ");
 				} else {
-					i = aT.write(JendrixMainActivity.BUFFER, 0,
+					if (aT.getPlayState()!=3) aT.play();
+					/*if (JendrixMainActivity.I<50){
+						Thread.sleep(10);
+					} else*/ 	i = aT.write(JendrixMainActivity.BUFFER, 0,
 							JendrixMainActivity.TAILLE_BUFFER);
 					Log.i("AudioServer", "           " + i); // retourne le
 																// nombre de
 																// byte lu
+					
 				}
 
 			}
