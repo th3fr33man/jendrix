@@ -46,7 +46,7 @@ void startTimer(Tc *tc, uint32_t channel, IRQn_Type irq, uint32_t frequency) {
 
 void setup(){
         analogReadResolution(8);
-        //analogWriteResolution(16);
+        analogWriteResolution(16);
         Serial.begin(115200);
         
         pinMode(13,OUTPUT);
@@ -141,7 +141,7 @@ void echantillonnage(){
   *pRead=/*Const*/ analogRead(sonInPin);
 
   //écriture sur le hp  
-  //analogWrite(hpPin,*pRead<<8);
+  analogWrite(hpPin,*pRead<<8);
   
     if (int(pRead)==Max+int(buffer)){            
        pRead = buffer;
