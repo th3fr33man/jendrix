@@ -95,9 +95,9 @@ public class AudioServer extends Thread implements Runnable {
 						Thread.sleep(10);
 					} else*/ 	i = aT.write(JendrixMainActivity.BUFFER, 0,
 							JendrixMainActivity.TAILLE_BUFFER);
-					Log.i("AudioServer", "           " + i); // retourne le
-																// nombre de
-																// byte lu
+					Log.i("AudioServer", "           " + i);// retourne le
+										// nombre de
+										// byte lu dans le logcat
 					
 				}
 
